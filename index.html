@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="screen">
+            <input type = "text" class="display" id="display" value="0" disabled>
+        </div>
+        <div class="precision">
+            <label for="precision">Decimal Precision:</label>
+            <input type="number" id="precision" value="5" min="0" max="10">
+        </div>
+        <div class="buttons">
+            <button class="clear" onclick="clearDisplay()">C</button>
+            <button onclick="appendToDisplay('7')">7</button>
+            <button onclick="appendToDisplay('8')">8</button>
+            <button onclick="appendToDisplay('9')">9</button>
+            <button class="operator" onclick="appendToDisplay('+')">+</button>
+            <button onclick="appendToDisplay('4')">4</button>
+            <button onclick="appendToDisplay('5')">5</button>
+            <button onclick="appendToDisplay('6')">6</button>
+            <button class="operator" onclick="appendToDisplay('-')">-</button>
+            <button onclick="appendToDisplay('1')">1</button>
+            <button onclick="appendToDisplay('2')">2</button>
+            <button onclick="appendToDisplay('3')">3</button>
+            <button class="operator" onclick="appendToDisplay('*')">×</button>
+            <button onclick="appendToDisplay('0')">0</button>
+            <button onclick="appendToDisplay('.')">.</button>
+            <button class="equal" onclick="evaluateExpression()">=</button>
+            <button class="operator" onclick="appendToDisplay('/')">/</button>
+            <button class="operator" onclick="appendToDisplay('(')">(</button>
+            <button class="operator" onclick="appendToDisplay(')')">)</button>
+            <button class="backspace" onclick="clearOneChar()">Back</button>
+            <button class="operator" onclick="appendToDisplay('^')">pow</button>
+            <button class="operator" onclick="loge()">ln</button>
+            <button class="operator" onclick="log10()">log₁₀</button>
+            <button class="operator" onclick="appendToDisplay('^0.5')">sqrt</button>
+            <button class="operator" id="sin-btn" onclick="sine()">sin</button>
+            <button class="operator" id="cos-btn" onclick="cosine()">cos</button>
+            <button class="operator" id="tan-btn" onclick="tangent()">tan</button>
+            <button class="operator" id="inv-btn" onclick="toggleTrig()">inv</button>
+            <div>
+                
+            </div>
+            <div style = "margin-bottom : 10px;">
+
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
