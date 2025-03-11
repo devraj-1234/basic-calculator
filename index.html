@@ -37,12 +37,12 @@
             <button class="operator" onclick="appendToDisplay(')')">)</button>
             <button class="backspace" onclick="clearOneChar()">Back</button>
             <button class="operator" onclick="appendToDisplay('^')">pow</button>
-            <button class="operator" onclick="loge()">ln</button>
-            <button class="operator" onclick="log10()">log₁₀</button>
+            <button class="operator" onclick="appendToDisplay('ln(')">ln</button>
+            <button class="operator" onclick="appendToDisplay('log(')">log₁₀</button>
             <button class="operator" onclick="appendToDisplay('^0.5')">sqrt</button>
-            <button class="operator" id="sin-btn" onclick="sine()">sin</button>
-            <button class="operator" id="cos-btn" onclick="cosine()">cos</button>
-            <button class="operator" id="tan-btn" onclick="tangent()">tan</button>
+            <button class="operator" id="sin-btn" onclick="appendToDisplay('sin(')">sin</button>
+            <button class="operator" id="cos-btn" onclick="appendToDisplay('cos(')">cos</button>
+            <button class="operator" id="tan-btn" onclick="appendToDisplay('tan(')">tan</button>
             <button class="operator" id="inv-btn" onclick="toggleTrig()">inv</button>
             <div>
                 
