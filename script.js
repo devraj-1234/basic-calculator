@@ -406,8 +406,8 @@ function evaluateExpression() {
   setTimeout(() => {
     let result = evaluate(expression);
 
-    if (isNaN(result)) {
-      display.value = "NaN";
+    if (isNaN(result) || !Number.isFinite(result)) {
+      display.value = "Error!";
       setTimeout(() => {
         document.getElementById("display").value = "0";
       }, 1500);
